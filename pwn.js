@@ -503,12 +503,8 @@ function pwn() {
             
             print("[+] Stage 2 result: " + result.toString());
             print("[+] I'm done here, continuing WebContent like nothing happened ;)");
-            ws_log.send("Connection closed!");
-            ws_log.close();
         }).catch(function (e) {
             print("[-] Exception caught: " + e);
-            ws_log.send("Connection closed!");
-            ws_log.close();
         });
     }
 
